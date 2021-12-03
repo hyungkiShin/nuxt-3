@@ -1,29 +1,4 @@
-# Nuxt 3 Minimal Starter
+## nuxt3 
 
-We recommend to look at the [documentation](https://v3.nuxtjs.org).
-
-## Setup
-
-Make sure to install the dependencies
-
-```bash
-yarn install
-```
-
-## Development
-
-Start the development server on http://localhost:3000
-
-```bash
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-yarn build
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+> Nitro Engine 은 Nuxt.js v3 에서 사용하는 새로운 서버엔진이다. 쉽게 생각하면 새로운 서버사이드 렌더러라고 이해를 해도좋을거같다.
+해당엔진은 Rollup.js 와 h3(https://github.com/unjs/h3) 라는 모듈을 이용하여 기반이 되어있다고 설명이 되어있다.
