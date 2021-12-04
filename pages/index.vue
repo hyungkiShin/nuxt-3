@@ -22,12 +22,6 @@ export default {
 };
 </script>
 <script setup lang="ts">
-// useFetch 사용법
-// const { data }: { data: any } = await useFetch("/api/tv?search=girls", {});
-// useAsyncData 사용법
-// const { data } = await useAsyncData("searchData", () => {
-//   return $fetch("/api/tv?search=mash");
-// }); 
 import { ref } from "vue";
 const searchText = ref("");
 const myData = ref([]) as any;
