@@ -5,8 +5,8 @@
       <button>Search For TV Shows</button>
     </form>
     <div class="stuff">
-      <div v-for="show in myData" :key="show.id">
-        <img :src="show.show?.image?.medium" alt="image"/>
+      <div v-for="item in myData" :key="item.id">
+        <img v-if="isImage(item)" :src="item.show?.image?.medium" alt="image"/>
       </div>
     </div>
   </div>
@@ -14,6 +14,11 @@
 <script lang="ts">
 export default {
   layout: "custom",
+  methods: {
+    isImage(item) {
+      return item.show?.image?.medium
+    }
+  }
 };
 </script>
 <script setup lang="ts">
@@ -22,7 +27,7 @@ export default {
 // useAsyncData 사용법
 // const { data } = await useAsyncData("searchData", () => {
 //   return $fetch("/api/tv?search=mash");
-// });
+// }); 
 import { ref } from "vue";
 const searchText = ref("");
 const myData = ref([]) as any;
